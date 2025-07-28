@@ -10,7 +10,11 @@ interface User {
 
 type UpdateProps = Pick<User, "name" | "age" | "password">;
 
-function updateUser(updatedProps: UpdateProps) {
+// PARTIAL
+
+type UpdatePropsOptional = Partial<UpdateProps>;
+
+function updateUser(updatedProps: UpdatePropsOptional) {
   //hit the database to update the user
   console.log(updatedProps.age);
 }
@@ -18,7 +22,5 @@ function updateUser(updatedProps: UpdateProps) {
 updateUser({
   name: "",
   age: 20,
-  password: "",
+  //   password: "",
 });
-
-
