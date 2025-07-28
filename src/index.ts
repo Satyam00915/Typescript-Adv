@@ -1,26 +1,26 @@
-interface User {
-  id: string;
-  name: string;
-  age: number;
-  email: string;
-  password: string;
-}
+// interface User {
+//   id: string;
+//   name: string;
+//   age: number;
+//   email: string;
+//   password: string;
+// }
 
-//PICK
+// //PICK
 
-type UpdateProps = Pick<User, "name" | "age" | "password">;
+// type UpdateProps = Pick<User, "name" | "age" | "password">;
 
-// PARTIAL
+// // PARTIAL
 
-type UpdatePropsOptional = Partial<UpdateProps>;
+// type UpdatePropsOptional = Partial<UpdateProps>;
 
-function updateUser(updatedProps: UpdatePropsOptional) {
-  //hit the database to update the user
-  console.log(updatedProps.age);
-}
+// function updateUser(updatedProps: UpdatePropsOptional) {
+//   //hit the database to update the user
+//   console.log(updatedProps.age);
+// }
 
-updateUser({
-  name: "",
-  age: 20,
-  //   password: "",
-});
+// updateUser({
+//   name: "",
+//   age: 20,
+//   //   password: "",
+// });
