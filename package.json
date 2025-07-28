@@ -1,0 +1,24 @@
+{
+  "name": "typescript-adv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc -b": "npx tsc -b"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Satyam00915/Typescript-Adv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Satyam00915/Typescript-Adv/issues"
+  },
+  "homepage": "https://github.com/Satyam00915/Typescript-Adv#readme",
+  "dependencies": {
+    "typescript": "^5.8.3"
+  }
+}
